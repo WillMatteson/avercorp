@@ -121,6 +121,34 @@
                         <div class="features-wrap">
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
+                                    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="pose.jpg" style="width:100%">
+  <img class="mySlides" src="perspiration.jpg" style="width:100%">
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
                                     <p class="features-wrap"> <img src="pose.jpg" alt="Teamwork"> </p>
                                     <h4 class="feature-title h3-mobile"></h4>
                                     <p class="text-sm">But even though this initial group of visionary founders continually excelled at providing integrated services at scale for multifactorial enterprise, they weren't making the impact they knew they could be. After a brief brainstorming session aided by DMT (which should be legal), the founders conceived of Avery®. </p>
